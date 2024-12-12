@@ -9,13 +9,26 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            FeedView()
+                .tabItem {
+                    Image(systemName: "house.fill") // Home icon
+                    Text("Home")
+                }
+            
+            ClosetView()
+                .tabItem {
+                    Image(systemName: "person.crop.rectangle") // Closet icon
+                    Text("Closet")
+                }
+            
+            SettingsView()
+                .tabItem {
+                    Image(systemName: "gearshape.fill") // Settings icon
+                    Text("Settings")
+                }
         }
-        .padding()
+        .accentColor(.blue) // Customize the tab bar highlight color
     }
 }
 

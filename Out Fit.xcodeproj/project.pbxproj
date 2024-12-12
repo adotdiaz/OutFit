@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FD8CF85F2CEEFF5B00A5F91B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8CF85E2CEEFF5700A5F91B /* ImagePicker.swift */; };
+		FD904B0A2CEEF3E100EA0D2D /* ClothingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD904ADA2CEEEE9100EA0D2D /* ClothingItem.swift */; };
+		FD904B0B2CEEF3E500EA0D2D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD904AD92CEEEE8100EA0D2D /* Post.swift */; };
+		FD904B0C2CEEF3EA00EA0D2D /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD904ADB2CEEEE9F00EA0D2D /* Settings.swift */; };
+		FDF7A4812D07D5B80012AFCF /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF7A4802D07D5B50012AFCF /* PersistenceController.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		FDFB88312CEEB06800667A63 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,12 +32,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FDFB88202CEEB06200667A63 /* Out Fit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Out Fit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FDFB88302CEEB06800667A63 /* Out FitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Out FitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FDFB883A2CEEB06800667A63 /* Out FitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Out FitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD8CF85E2CEEFF5700A5F91B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		FD904AC62CEEEE3100EA0D2D /* Out Fit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Out Fit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD904AC72CEEEE3100EA0D2D /* Out FitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Out FitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD904AC82CEEEE3100EA0D2D /* Out FitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Out FitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD904AD92CEEEE8100EA0D2D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		FD904ADA2CEEEE9100EA0D2D /* ClothingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingItem.swift; sourceTree = "<group>"; };
+		FD904ADB2CEEEE9F00EA0D2D /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		FDF7A4802D07D5B50012AFCF /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		FD904B072CEEF2EF00EA0D2D /* Views */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Views;
+			sourceTree = "<group>";
+		};
 		FDFB88222CEEB06200667A63 /* Out Fit */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Out Fit";
@@ -72,24 +90,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD904AD82CEEEE6200EA0D2D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FDF7A4802D07D5B50012AFCF /* PersistenceController.swift */,
+				FD8CF85E2CEEFF5700A5F91B /* ImagePicker.swift */,
+				FD904AD92CEEEE8100EA0D2D /* Post.swift */,
+				FD904ADA2CEEEE9100EA0D2D /* ClothingItem.swift */,
+				FD904ADB2CEEEE9F00EA0D2D /* Settings.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		FDFB88172CEEB06200667A63 = {
 			isa = PBXGroup;
 			children = (
+				FD904B072CEEF2EF00EA0D2D /* Views */,
+				FD904AD82CEEEE6200EA0D2D /* Models */,
 				FDFB88222CEEB06200667A63 /* Out Fit */,
 				FDFB88332CEEB06800667A63 /* Out FitTests */,
 				FDFB883D2CEEB06800667A63 /* Out FitUITests */,
-				FDFB88212CEEB06200667A63 /* Products */,
+				FD904AC62CEEEE3100EA0D2D /* Out Fit.app */,
+				FD904AC72CEEEE3100EA0D2D /* Out FitTests.xctest */,
+				FD904AC82CEEEE3100EA0D2D /* Out FitUITests.xctest */,
 			);
-			sourceTree = "<group>";
-		};
-		FDFB88212CEEB06200667A63 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FDFB88202CEEB06200667A63 /* Out Fit.app */,
-				FDFB88302CEEB06800667A63 /* Out FitTests.xctest */,
-				FDFB883A2CEEB06800667A63 /* Out FitUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,13 +132,14 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				FD904B072CEEF2EF00EA0D2D /* Views */,
 				FDFB88222CEEB06200667A63 /* Out Fit */,
 			);
 			name = "Out Fit";
 			packageProductDependencies = (
 			);
 			productName = "Out Fit";
-			productReference = FDFB88202CEEB06200667A63 /* Out Fit.app */;
+			productReference = FD904AC62CEEEE3100EA0D2D /* Out Fit.app */;
 			productType = "com.apple.product-type.application";
 		};
 		FDFB882F2CEEB06800667A63 /* Out FitTests */ = {
@@ -137,7 +162,7 @@
 			packageProductDependencies = (
 			);
 			productName = "Out FitTests";
-			productReference = FDFB88302CEEB06800667A63 /* Out FitTests.xctest */;
+			productReference = FD904AC72CEEEE3100EA0D2D /* Out FitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		FDFB88392CEEB06800667A63 /* Out FitUITests */ = {
@@ -160,7 +185,7 @@
 			packageProductDependencies = (
 			);
 			productName = "Out FitUITests";
-			productReference = FDFB883A2CEEB06800667A63 /* Out FitUITests.xctest */;
+			productReference = FD904AC82CEEEE3100EA0D2D /* Out FitUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -196,7 +221,7 @@
 			mainGroup = FDFB88172CEEB06200667A63;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = FDFB88212CEEB06200667A63 /* Products */;
+			productRefGroup = FDFB88172CEEB06200667A63;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -236,6 +261,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD904B0C2CEEF3EA00EA0D2D /* Settings.swift in Sources */,
+				FD8CF85F2CEEFF5B00A5F91B /* ImagePicker.swift in Sources */,
+				FDF7A4812D07D5B80012AFCF /* PersistenceController.swift in Sources */,
+				FD904B0A2CEEF3E100EA0D2D /* ClothingItem.swift in Sources */,
+				FD904B0B2CEEF3E500EA0D2D /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
